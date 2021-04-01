@@ -14,24 +14,7 @@ This app is divided to three parts. The frontend, backend and embedded system.
 Frontend | Backend | Embedded system
 ------------ | ------------- | -------------
 Typescript | Typescript | C
-
-
-### Frontend
-#### React
-#### Redux
-#### Typescript
-#### SASS
-#### Socket.IO
-
-### Backend
-#### NodeJS
-#### ExpressJS
-#### Typescript
-#### NoSQL DB
-#### Socket.IO
-#### Swagger
-
-### Embedded system
-#### Arduino Uno
-#### ESP 8266
-#### Web Server
+React | NodeJS | Arduino
+Redux | ExpressJS | ESP 8266
+SocketIO | SocketIO | Web Server
+SASS | Swagger | A lot of sensors  
