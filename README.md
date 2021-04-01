@@ -22,9 +22,16 @@ SASS | Swagger | A lot of sensors
 
 ## About
 ### Screenshots
-<img src="https://i.ibb.co/V3j7xWH/details.png" width="90%"></img>
-<img src="https://i.ibb.co/jGnyHML/details2.png" width="90%"></img>
+#### Login page
+
 <img src="https://i.ibb.co/PmbLjP6/login.png" width="90%"></img> 
-<img src="https://i.ibb.co/bK1kHwm/modal.png" width="90%"></img> 
+#### Example furnances list
+When user click on furnance, user will be redirected to details page
 <img src="https://i.ibb.co/v1dgssZ/piece.png" width="90%"></img> 
 <img src="https://i.ibb.co/YLbyTHx/piece2.png" width="90%"></img> 
+#### Example furnance details
+When user click on detail block, the block will rotate to the other side
+<img src="https://i.ibb.co/V3j7xWH/details.png" width="90%"></img>
+<img src="https://i.ibb.co/jGnyHML/details2.png" width="90%"></img>
+#### Example modal with blurred background
+<img src="https://i.ibb.co/bK1kHwm/modal.png" width="90%"></img> 
