@@ -11,6 +11,11 @@ This project is 100% non-commercial. Creating by programming enthusiast to impro
 
 ## Tech stack
 This app is divided to three parts. The frontend, backend and embedded system.
+Frontend | Backend | Embedded system
+------------ | ------------- | -------------
+Typescript | Typescript | C
+
+
 ### Frontend
 #### React
 #### Redux
