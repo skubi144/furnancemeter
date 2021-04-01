@@ -1,0 +1,38 @@
+$anim-orange-bg: "anim-orange-bg";
+
+@mixin animation-orange-bg {
+  @keyframes anim-orange-bg {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+@mixin fadeInWidth {
+  @keyframes anim-fadeInWidth {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+}
+@mixin fadeInWidthBg($widthFrom,$widthTo,$bgColor,$fontColor,$border:none) {
+  @keyframes anim-fadeInWidthBg {
+    0% {
+      width: $widthFrom;
+    }
+    100% {
+      border:$border;
+      background-color: $bgColor;
+      width: $widthTo;
+      color:$fontColor;
+    }
+  }
+}

@@ -1,0 +1,199 @@
+@import "../../styles/margin";
+@import "../../styles/padding";
+@import "../../styles/timer";
+@import "../../styles/colors";
+@import "../../styles/font";
+@import "../../styles/animations";
+
+@keyframes littleUp {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1deg);
+    box-shadow: -20px 0 20px 0.1px $gray;
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+}
+@include fadeInWidthBg(
+  20%,
+  21%,
+  $white,
+  $orange--light,
+  1px solid $orange--dark
+);
+.rotate180 {
+  transform: rotateY(180deg);
+}
+.flip-card {
+  background-color: transparent;
+  width: 80%;
+  height: 25vh;
+  perspective: 1000px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.flip-card-inner {
+  position: relative;
+  animation: anim-fadeInWidth 1s ease forwards;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 0 10px 0.1px $gray;
+  // animation: littleUp 4s 4s ease-in-out infinite forwards;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: $font--big;
+  background-color: $orange--light;
+  color: white;
+
+  letter-spacing: 0.5vh;
+}
+
+.flip-card-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  //border: 3px solid $orange--dark;
+  color: $orange--light;
+  transform: rotateY(180deg);
+}
+.furnanceInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $white;
+  align-items: center;
+
+  &__titleArea {
+    width: 100%;
+    padding: $padding--normal;
+    margin: $margin--big 0;
+    color: $orange--light;
+    font-weight: 500;
+    font-size: $font--vBig;
+    letter-spacing: 0.5vh;
+    border-bottom: 1px solid $orange--dark;
+    text-transform: capitalize;
+  }
+  &__icons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    margin: $margin--normal 0;
+    padding: $padding--normal;
+  }
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  &__link {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: $padding--normal;
+    background-color: $orange--light;
+    margin: $margin--normal;
+    border: 1px solid transparent;
+    transition: 1s all;
+    &:hover {
+      animation: anim-fadeInWidthBg $vfast ease forwards;
+    }
+  }
+  &__sensor {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+    padding: $padding--normal;
+    margin: $margin--big 0;
+    color: $orange--light;
+    font-weight: 500;
+
+    &__sensor--front {
+    }
+    &__sensor--back {
+    }
+  }
+}
+.furnance {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 25vh;
+  margin: $margin--big 0;
+  box-shadow: 3px 3px 10px 0.1px $black--dark;
+  background: url("https://images.unsplash.com/photo-1505017791108-7b40f307cdc5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=700&q=80")
+    center center no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: $fast all;
+  filter: grayscale(1);
+
+  &:hover {
+    cursor: pointer;
+    filter: grayscale(0);
+  }
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: $padding--small;
+    margin-left: $margin--normal;
+    min-width: $font--vvBig;
+    background-color: $white;
+  }
+  &__section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    &--justifyRight {
+      justify-content: flex-end;
+    }
+  }
+  &__iconTitle {
+    font-weight: 500;
+    padding: $padding--vbig;
+  }
+  &__title {
+    font-size: $font--big;
+    text-align: right;
+    padding: $padding--small;
+    font-weight: 900;
+    color: $black--dark;
+    background: rgba($white, 1);
+    mix-blend-mode: screen;
+  }
+  &__img {
+    height: 5vh;
+  }
+}

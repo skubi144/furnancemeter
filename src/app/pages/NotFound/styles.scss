@@ -1,0 +1,18 @@
+@import "../../shared/styles/background";
+@import "../../shared/styles/padding";
+.notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  &__elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba($black--dark,0.5);
+    width: 80%;
+    padding:$padding--big;
+
+  }
+}

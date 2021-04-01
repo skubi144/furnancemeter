@@ -1,0 +1,26 @@
+@import "./timer";
+
+.opacity0 {
+  opacity: 0;
+  transition: $fast all;
+}
+.opacity1 {
+  opacity: 1;
+  transition: $fast all;
+}
+.translateX100 {
+  margin-left: 0;
+  box-shadow: none;
+  transition: $fast all;
+  transform: translateX(-170%);
+}
+.translateX14 {
+  transition: $fast all;
+  
+  transform: translateX(-14%);
+  //box-shadow:  0px 0px 25px .1px gray;
+}
+.width100 {
+  width: 100%;
+  transform: $fast all;
+}

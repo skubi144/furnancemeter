@@ -1,0 +1,13 @@
+@import "../../styles/font";
+@import "../../styles/colors";
+.title {
+  &--normal {
+    font-size: $font--normal;
+  }
+  &--big {
+    font-size: $font--big;
+  }
+  &--orangeDark {
+    color: $orange--dark;
+  }
+}

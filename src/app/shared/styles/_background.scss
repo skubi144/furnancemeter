@@ -1,0 +1,16 @@
+@import "./colors";
+@mixin blackDarkBg {
+  background-color: $black--dark;
+}
+@mixin blackLightBg {
+  background-color: $black--light;
+}
+@mixin gradientOrange {
+  background: rgb(212, 51, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(212, 51, 0, 1) 33%,
+    rgba(239, 90, 0, 1) 82%
+  );
+  background-size: 400% 400%;
+}

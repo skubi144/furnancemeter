@@ -1,0 +1,80 @@
+@import "../../styles/margin";
+@import "../../styles/padding";
+@import "../../styles/timer";
+@import "../../styles/colors";
+@import "../../styles/font";
+.furnanceSkeleton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 25vh;
+  margin: $margin--big 0;
+  box-shadow: 3px 3px 10px 0.1px $black--dark;
+  background: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: $fast all;
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: $padding--small;
+    margin-left: $margin--normal;
+    min-width: $font--vvBig;
+    background: rgb(128, 128, 128);
+    background: linear-gradient(
+      90deg,
+      rgba(128, 128, 128, 1) 4%,
+      rgba(255, 255, 255, 1) 34%,
+      rgba(128, 128, 128, 1) 100%
+    );
+    background-size: 400% 400%;
+    animation: anim-gray-bg 2s ease infinite forwards;
+    min-height: 9vh;
+  }
+  &__section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    &--justifyRight {
+      justify-content: flex-end;
+    }
+  }
+  &__iconTitle {
+    font-weight: 500;
+    padding: $padding--vbig;
+  }
+  &__title {
+    min-width: 40%;
+    min-height: $font--vBig;
+    font-size: $font--big;
+    text-align: right;
+    padding: $padding--small;
+    font-weight: 900;
+    background: rgb(128, 128, 128);
+    background: linear-gradient(
+      90deg,
+      rgba(128, 128, 128, 1) 4%,
+      rgba(255, 255, 255, 1) 34%,
+      rgba(128, 128, 128, 1) 100%
+    );
+    background-size: 400% 400%;
+    animation: anim-gray-bg 2s ease infinite forwards;
+  }
+}
+@keyframes anim-gray-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,91 @@
+@import "../../shared/styles/padding";
+@import "../../shared/styles/margin";
+@import "../../shared/styles/colors";
+@import "../../shared/styles/font";
+.login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: $black--dark;
+  &__left {
+    display: flex;
+    width: 60%;
+    height: 100vh;
+
+    justify-content: right;
+    align-items: center;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background-color: $black--light;
+    height: 100%;
+  }
+  &__form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 25vh;
+
+    padding: $padding--big;
+  }
+  &__input {
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 3px solid $orange--dark;
+    width: 80%;
+    padding: $padding--big;
+    margin: $margin--big;
+    color: $orange--light;
+    transition: 1s all ease-in;
+    &:focus {
+      border-bottom: 3px solid $orange--light;
+      background:none;
+    }
+    font-size: x-large;
+  }
+  &__input::placeholder {
+    opacity: 1;
+    font-size: x-large;
+    color: $orange--light;
+
+    text-transform: capitalize;
+  }
+  &__button {
+    background: none;
+    border: none;
+    width: 80%;
+    padding: $padding--big;
+    color: $orange--light;
+    border: 3px solid $orange--dark;
+    margin: $margin--big;
+    font-size: x-large;
+
+    transition: 1s all ease;
+    &:hover {
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+      background-color: $orange--light;
+      border: 3px solid $orange--light;
+      color: $white;
+      cursor: pointer;
+    }
+  }
+  &__warning {
+    border:3px dashed $orange--dark;
+    font-size: $font--normal;
+    color:$orange--light;
+    letter-spacing: 5px;
+    font-weight: 500;
+    width: 80%;
+    word-spacing: 5px;
+    padding: $padding--normal;
+    margin: $margin--normal 0;
+  }
+}

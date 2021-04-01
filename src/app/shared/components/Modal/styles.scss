@@ -1,0 +1,25 @@
+.modal {
+  position: absolute;
+  animation: sc .5s ease-in-out forwards;
+  height: 75vh;
+  width: 50%;
+  top: 0;
+  left: 0;
+  transform: translate(50%, 20%);
+  background-color: rgba(white, 0.95);
+  border: 3px solid black;
+  opacity: 0;
+  &__top {
+    width: 100%;
+    text-align: right;
+  }
+}
+@keyframes sc {
+  0% {
+
+  }
+  100% {
+    
+    opacity: 1;
+  }
+}
